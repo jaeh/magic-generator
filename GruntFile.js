@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 			main: {
 				files: [
 					//copy static files
-					{expand: false, src: ['static/**'], dest: 'build/'},
+					{expand: true, cwd: 'assets/static/', src: ['**'], dest: 'build/static/'},
 					{expand: false, src: ['favicon.ico'], dest: 'build/'}
 				]
 			}
