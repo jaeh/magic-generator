@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+	head 
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		title Magic Generator
+		meta(name="description", content="The Magic Generator. Magically generate your pages.")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href=static_dir + "css/main.css")
+
+	body
+		block header
+			header.main
+				nav
+					ul
+						li: a(href="/") home
+						li: a(href="http://magicshifter") magicshifter.net
+
+
+		block content 
+			div empty body content
+
+		block footer
+			footer.main 
+				div#imprint
+					| created by 
+					a(href="https://bwb.is" target="utopia") 
+						img(src=img_dir + "bwb.png" alt="BitcoinersWithoutBorders")
+					| @ 
+					a(href="http://www.metalab.at" target="metalab")
+						img(src=img_dir + "metalab.png" alt="Metalab")
+
+		script(src=static_dir + "js/script.js")
